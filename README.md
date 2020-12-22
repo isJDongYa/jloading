@@ -1,4 +1,4 @@
-# @jdorg/jloading
+# jloading
 
 一个基于vue的“菊花转”组件
 
