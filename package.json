@@ -1,10 +1,30 @@
 {
   "name": "@jdorg/jloading",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/jloading.umd.min.js",
+  "files": [
+    "dist/**/*"
+  ],
+  "description": "一个基于vue的“菊花转”组件",
+  "keywords": [
+    "vue",
+    "component",
+    "loading",
+    "菊花转"
+  ],
+  "author": {
+    "name": "jdongchen",
+    "email": "131289225@qq.com"
+  },
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "dev": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name jloading src/lib/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isJDongYa/jloading.git"
   },
   "dependencies": {
     "vue": "^2.6.11",
@@ -18,5 +38,9 @@
     "less-loader": "^5.0.0",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
   }
 }
